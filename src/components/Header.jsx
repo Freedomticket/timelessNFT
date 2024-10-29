@@ -1,4 +1,4 @@
-import timelessLogo from '../assets/timeless.png'
+import musicart from '../assets/musicart.png'
 import { connectWallet } from '../Blockchain.Services'
 import { useGlobalState, truncate } from '../store'
 
@@ -9,8 +9,8 @@ const Header = () => {
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
         <img
           className="w-32 cursor-pointer"
-          src={timelessLogo}
-          alt="Timeless Logo"
+          src={musicart}
+          alt="MusiCart Logo"
         />
       </div>
 
@@ -28,7 +28,7 @@ const Header = () => {
       {connectedAccount ? (
         <button
           className="shadow-xl shadow-black text-white
-        bg-[#e32970] hover:bg-[#bd255f] md:text-xs p-2
+        bg-[#6158d7] hover:bg-[#3bbbcc] md:text-xs p-2
           rounded-full cursor-pointer"
         >
           {truncate(connectedAccount, 4, 4, 11)}
@@ -36,7 +36,7 @@ const Header = () => {
       ) : (
         <button
           className="shadow-xl shadow-black text-white
-        bg-[#e32970] hover:bg-[#bd255f] md:text-xs p-2
+        bg-[#4542a6] hover:bg-[#3437e3] md:text-xs p-2
           rounded-full cursor-pointer"
           onClick={connectWallet}
         >

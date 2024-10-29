@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="flex flex-row mt-5">
           <button
             className="shadow-xl shadow-black text-white
-            bg-[#e32970] hover:bg-[#bd255f]
+            bg-[#381fc3] hover:bg-[#2d0ff0]
             rounded-full cursor-pointer p-2"
             onClick={onCreatedNFT}
           >
